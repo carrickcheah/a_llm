@@ -1,14 +1,13 @@
 from openai import OpenAI
 import streamlit as st
 
-with st.sidebar:
-    openai_api_key = "ask-proj-9SYULpKohuhpjAV65FGGT3BlbkFJ1FIBXCHOr6ApbJIVL3ZJa"
-    "[Get an OpenAI API key](https://platform.openai.com/account/api-keys)"
-    "[View the source code](https://github.com/streamlit/llm-examples/blob/main/Chatbot.py)"
-    "[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/streamlit/llm-examples?quickstart=1)"
-
 st.title("💬 BolehGPT")
 st.caption("Helping your organization prepare a net zero world")
+st.markdown("[Get an OpenAI API key](https://platform.openai.com/account/api-keys)")
+st.markdown("[View the source code](https://github.com/streamlit/llm-examples/blob/main/Chatbot.py)")
+st.markdown("[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/streamlit/llm-examples?quickstart=1)")
+
+openai_api_key = "sk-proj-9SYULpKohuhpjAV65FGGT3BlbkFJ1FIBXCHOr6ApbJIVL3ZJ"
 if "messages" not in st.session_state:
     st.session_state["messages"] = [{"role": "assistant", "content": "How can I help you?"}]
 
