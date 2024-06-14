@@ -7,7 +7,7 @@ st.markdown("[Get an OpenAI API key](https://platform.openai.com/account/api-key
 st.markdown("[View the source code](https://github.com/streamlit/llm-examples/blob/main/Chatbot.py)")
 st.markdown("[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/streamlit/llm-examples?quickstart=1)")
 
-openai_api_key = "sk-proj-9SYULpKohuhpjAV65FGGT3BlbkFJ1FIBXCHOr6ApbJIVL3ZJ"
+openai_api_key = "ask-proj-9SYULpKohuhpjAV65FGGT3BlbkFJ1FIBXCHOr6ApbJIVL3ZJ"
 if "messages" not in st.session_state:
     st.session_state["messages"] = [{"role": "assistant", "content": "How can I help you?"}]
 
