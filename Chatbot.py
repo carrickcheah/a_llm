@@ -1,13 +1,17 @@
 from openai import OpenAI
 import streamlit as st
 
-st.title("💬 BolehGPT !")
-st.caption("Helping your organization prepare a net zero world")
-st.markdown("[Get an OpenAI API key](https://platform.openai.com/account/api-keys)")
-st.markdown("[View the source code](https://github.com/streamlit/llm-examples/blob/main/Chatbot.py)")
-st.markdown("[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/streamlit/llm-examples?quickstart=1)")
+with st.sidebar:
+    openai_api_key = st.text_input("OpenAI API Key", key="chatbot_api_key", type="password")
+    "hihi"
+    "hihi"
+    "hi"
+
+st.title("💬 Chatbot")
+st.caption("🚀 A Streamlit chatbot powered by OpenAI")
 
 openai_api_key = "ask-proj-9SYULpKohuhpjAV65FGGT3BlbkFJ1FIBXCHOr6ApbJIVL3ZJ"
+
 if "messages" not in st.session_state:
     st.session_state["messages"] = [{"role": "assistant", "content": "How can I help you?"}]
 
@@ -26,4 +30,3 @@ if prompt := st.chat_input():
     msg = response.choices[0].message.content
     st.session_state.messages.append({"role": "assistant", "content": msg})
     st.chat_message("assistant").write(msg)
-    
