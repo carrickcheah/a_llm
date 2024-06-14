@@ -1,7 +1,7 @@
 from openai import OpenAI
 import streamlit as st
 
-st.title("💬 BolehGPT")
+st.title("💬 BolehGPT !")
 st.caption("Helping your organization prepare a net zero world")
 st.markdown("[Get an OpenAI API key](https://platform.openai.com/account/api-keys)")
 st.markdown("[View the source code](https://github.com/streamlit/llm-examples/blob/main/Chatbot.py)")
