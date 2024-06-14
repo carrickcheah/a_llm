@@ -2,13 +2,12 @@ from openai import OpenAI
 import streamlit as st
 
 with st.sidebar:
-    openai_api_key = st.text_input("OpenAI API Key", key="chatbot_api_key", type="password")
     "hihi"
     "hihi"
     "hi"
 
-st.title("💬 Chatbot")
-st.caption("🚀 A Streamlit chatbot powered by OpenAI")
+st.title("💬 BokehGPT")
+st.caption("🚀 yeah yeah ")
 
 openai_api_key = "ask-proj-9SYULpKohuhpjAV65FGGT3BlbkFJ1FIBXCHOr6ApbJIVL3ZJ"
 
